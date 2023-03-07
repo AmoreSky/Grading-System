@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body style="background-image: url(./book-library-with-open-textbook.jpg); background-size: cover; text-align: center; padding-top: 40px;">
+        <div>
+            <h1 style="color:wheat; font-size: 70px;">Grading system</h1>
+            <div id="display" style="width: 500px; height: 70px; background-color:bisque; position: relative; left: 550px;margin-bottom: 30px; box-shadow: 2px 2px 2px brown, 2px -2px 2px brown,-2px 2px 2px brown; padding: 10px;"></div>    
+            <input type="number" placeholder="Enter your score" id="userScore" style="height: 50px; background-color: coral; border: none; box-shadow: 2px 2px 2px brown, -2px 2px 2px brown, 2px -2px 2px brown;width: 400px; font-size: xx-large; color: powderblue;margin-bottom: 20px; padding: 10px; "><br>
+            <button onclick="grade()" style="width: 300px; height: 50px; font-size: x-large; background-color: burlywood; border: none; box-shadow: 2px 2px 2px brown, 2px -2px 2px brown, -2px 2px 2px brown; color: chocolate; font-weight: bold;">Check Your Grade</button>
+
+        </div>
+
+        <script>
+
+            function grade(){
+                var result = userScore.value
+                if(result<=39 && result >=0){
+                    display.innerHTML = `<h1>F  - Fail</h1>`;
+                    display.style.color = "red"
+                }
+                else if(result>=40 && result <=44){
+                    display.innerHTML = `<h1>D  - Pass</h1>`;
+                    display.style.color = "Yellow"
+                }
+                else if (result>=45 && result <=49){
+                    display.innerHTML = `<h1>C  - Credit</h1>`;
+                    display.style.color = "Blue"
+                }
+                else if (result>=50 && result <=59){
+                    display.innerHTML = `<h1>B2  - Good</h1>`;
+                    display.style.color = "Blue"
+                }
+                else if(result>=60 && result <=69){
+                    display.innerHTML = `<h1>B1  - Very-Good</h1>`;
+                    display.style.color = "Blue"
+                }
+                else if (result>=70 && result <=100){
+                    display.innerHTML = `<h1>A  - Excellent</h1>`;
+                    display.style.color = "Green"
+                }
+                else{
+                    display.innerHTML = `<h1>Inavlid Input</h1>`;
+                    display.style.color = "red"
+                }
+            }
+        </script>
+    </body>
+</html>

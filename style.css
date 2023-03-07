@@ -1,0 +1,22 @@
+@media only screen and (min-width:370px) and (max-width:475px){
+    body{
+        text-align: center !important;
+    }
+    h1{
+        font-size: xx-large !important;
+    }
+    div{
+        position: relative;
+        left: 10px !important;
+        width: 80% !important;
+        height: 20px !important;
+    }
+    input,button{
+        height: 20px !important;
+        width: 70% !important;
+        font-size: large !important;
+    }
+    button{
+        height: 30px !important;
+    }
+}
