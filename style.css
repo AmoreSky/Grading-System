@@ -1,22 +1,40 @@
 @media only screen and (min-width:370px) and (max-width:475px){
     body{
+        margin: 0;
+        padding: 2px;
+    }
+    body{
         text-align: center !important;
+        overflow-x: hidden !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-size: 110px  190px !important;
+        width: 95px !important;
     }
     h1{
-        font-size: xx-large !important;
+        font-size: large !important;
+        width: 80px !important;
+        margin-top: -40px;
     }
-    div{
+    #display{
         position: relative;
-        left: 10px !important;
-        width: 80% !important;
+        left: 5px !important;
+        width: 70px !important;
         height: 20px !important;
+        margin-left: 0px !important;
+        margin-bottom: 10px !important;
+    }
+    input{
+        font-size: xx-small !important;
+        padding: 3px !important;
+        width: 67px !important;
+        margin-bottom: 10px !important;
     }
     input,button{
         height: 20px !important;
-        width: 70% !important;
-        font-size: large !important;
     }
     button{
-        height: 30px !important;
+        width: 60px !important;
+        font-size: 5px !important;
     }
 }
