@@ -1,40 +1,33 @@
 @media only screen and (min-width:340px) and (max-width:475px){
     body{
         margin: 0;
-        padding: 2px;
-    }
-    body{
-        text-align: center !important;
-        overflow-x: hidden !important;
-        background-size: cover !important;
-        background-repeat: no-repeat !important;
-        background-size: 110px  190px !important;
-        width: 95px !important;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     h1{
-        font-size: large !important;
-        width: 80px !important;
-        margin-top: -40px;
+        font-size: xx-large!important;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
     #display{
         position: relative;
-        left: 5px !important;
-        width: 70px !important;
+        left: 10px !important;
+        width: 85% !important;
         height: 20px !important;
         margin-left: 0px !important;
-        margin-bottom: 10px !important;
+        margin-bottom: 30px !important;
     }
     input{
-        font-size: xx-small !important;
-        padding: 3px !important;
-        width: 67px !important;
-        margin-bottom: 10px !important;
+        font-size: large !important;
+        width: 80% !important;
+        margin-bottom: 30px !important;
     }
     input,button{
-        height: 20px !important;
+        height: 30px !important;
     }
     button{
-        width: 60px !important;
-        font-size: 5px !important;
+        width: 80% !important;
+        font-size: large !important;
     }
 }
