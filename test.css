@@ -1,6 +1,7 @@
 body{
-    background-image: url(./book-library-with-open-textbook.jpg);
-    background-size: cover;
+    background-image: url(./2208.i305.025.F.m005.c9.realistic\ book\ lover.jpg);
+    background-size: contain;
+    /* background-repeat: no-repeat; */
 }
 .class{
     color: coral;
