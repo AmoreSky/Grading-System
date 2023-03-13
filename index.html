@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body style="background-image: url(./book-library-with-open-textbook.jpg); background-size: cover; text-align: center; padding-top: 40px;">
-        <div>
-            <h1 style="color:wheat; font-size: 70px;">Grading System</h1>
-            <div id="display" style="width: 500px; height: 70px; background-color:bisque; position: relative; left: 550px;margin-bottom: 30px; box-shadow: 2px 2px 2px brown, 2px -2px 2px brown,-2px 2px 2px brown; padding: 10px;"></div>    
-            <input type="number" placeholder="Enter your score" id="userScore" style="height: 50px; background-color: coral; border: none; box-shadow: 2px 2px 2px brown, -2px 2px 2px brown, 2px -2px 2px brown;width: 400px; font-size: xx-large; color: powderblue;margin-bottom: 20px; padding: 10px; "><br>
-            <button onclick="grade()" style="width: 300px; height: 50px; font-size: x-large; background-color: burlywood; border: none; box-shadow: 2px 2px 2px brown, 2px -2px 2px brown, -2px 2px 2px brown; color: chocolate; font-weight: bold;">Check Your Grade</button>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container col-12 mt-lg-5">
+        <div class="row shadow">
+            <h1 class="text-center class">Grading System</h1>
+            <div class="form-group my-2">
+                <input type="number" class="form-control p-3 text-center" placeholder="Input your Score" id="userScore">
+            </div>
+            <div class="form-group my-2">
+                <button onclick="calculate()" class="btn btn-success w-100">Check</button>
+            </div>
+            <div class="form-group my-2 text-center" id="display">
+                <input type="text" placeholder="Your grade will be displayed here" disabled class="form-control text-center p-3">
+            </div>
         </div>
+    </div>
 
-        <script>
-
-            function grade(){
-                var result = userScore.value
+    <script>
+        function calculate () {
+            // alert ("Hello Ranti")
+            var result = userScore.value
                 if(result<=39 && result >=0){
                     display.innerHTML = `<h1>F  - Fail</h1>`;
                     display.style.color = "red"
+                }
+                else if(result == ""){
+                    display.innerHtml = `<h1> Please Input Your Score </h1>`;
+                    display.style.color = "Blue"
                 }
                 else if(result>=40 && result <=44){
                     display.innerHTML = `<h1>D  - Pass</h1>`;
@@ -48,7 +61,8 @@
                     display.innerHTML = `<h1>Inavlid Input</h1>`;
                     display.style.color = "red"
                 }
-            }
-        </script>
-    </body>
+            
+        }
+    </script>
+</body>
 </html>
